@@ -1,6 +1,11 @@
 # web-scraping-challenge
 Mars data scrape
 
+scrape_mars.py is the final scrape code
+app.py is the final app file
+html is stored in templates file
+css is stored in static file
+Archieve file contains project development files and jupyter notebook.
 
 step by step:
 
@@ -92,8 +97,6 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 
 * Create a template HTML file called `index.html` that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design. **As long as all the data is displayed, formatting and design are of secondary importance.** Reminder that in order to interact correctly with flask, this HTML file must live in the `templates` folder that is located in the same folder as your `app.py` file.
 
-![final_app_part1.png](Images/final_app_part1.png)
-![final_app_part2.png](Images/final_app_part2.png)
 
 - - -
 
