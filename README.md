@@ -2,10 +2,15 @@
 Mars data scrape
 
 scrape_mars.py is the final scrape code
+
 app.py is the final app code
+
 app screenshots are stored in the Screenshots folder
+
 html is stored in templates folder
+
 css is stored in static folder
+
 Archieve folder contains project development files and early jupyter notebooks.
 
 
