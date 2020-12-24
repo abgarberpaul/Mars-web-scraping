@@ -9,20 +9,37 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<!-- CLEAN UP THIS SECTION (update with MARS names) -->
+<!-- DISPLAYED SECTION -->
 
+<!-- Headline & Button -->
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Mars Weather Data</h1>
-      
+      <h1>Mars Mission Data</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
     </div>
-    <img src="{{ vacation.sloth_img }}" alt="Sloth">
-    
-    <h3>Max Temp: {{ vacation.max_temp }}</h3>
-    <h3>Min Temp: {{ vacation.min_temp }}</h3>
-  </div>
+<!-- Mars title, paragraph -->
+    <div>
+      <h3> Mars Info:</h3>
+      <h3>nasa title: {{ nasa_title }}</h3>
+      <p class = "lead">nasa paragraph: {{ nasa_paragraph }}</p>    
+    </div>
+<!-- Mars BIG Image -->
+    <div>
+      <img src="{{ featured_image_url }}" alt="Mars Image">
+    </div>
+
+<!-- Mars Info -->
+    <!-- <table class = "table"> {{  facts_html  }}</table> -->
+
+<!-- Mars Gallery -->
+    <div>
+      <h3> Mars Hemispheres</h3>
+      <hr>
+      <!-- GALLERY -->
+    </div>
+
+
   </div>
 </body>
 
