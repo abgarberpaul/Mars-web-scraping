@@ -1,20 +1,19 @@
-# web-scraping-challenge
-Mars data scrape
+# web-scraping-challenge: Mars data scrape!
 
-scrape_mars.py is the final scrape code
+* scrape_mars.py is the final scrape code
 
-app.py is the final app code
+* app.py is the final app code
 
-app screenshots are stored in the Screenshots folder
+* app screenshots are stored in the Screenshots folder
 
-html is stored in templates folder
+* html is stored in templates folder
 
-css is stored in static folder
+* css is stored in static folder
 
-Archieve folder contains project development files and early jupyter notebooks.
+* Archieve folder contains project development files and early jupyter notebooks.
 
 
-step by step:
+# step by step:
 
 # Web Scraping  - Mission to Mars
 
