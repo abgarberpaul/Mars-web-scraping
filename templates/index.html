@@ -13,7 +13,7 @@
 
 <!-- Headline & Button -->
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" id="headline-and-button">
     <div class="jumbotron text-center">
       <h1>Mars Mission Data</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
@@ -21,25 +21,40 @@
 <!-- Mars title, paragraph -->
     <div>
       <h3> Mars Info:</h3>
-      <h3>nasa title: {{ nasa_title }}</h3>
-      <p class = "lead">nasa paragraph: {{ nasa_paragraph }}</p>    
+        <h3> {{ mars_dict.nasa_title }}</h3>
+          <p class = "lead">{{ mars_dict.nasa_paragraph }}</p>    
     </div>
 <!-- Mars BIG Image -->
     <div>
-      <img src="{{ featured_image_url }}" alt="Mars Image">
+      <h3>Mars: Current Image</h3>
+      <img src="{{ mars_dict.featured_image_url }}" alt="Mars Image" width="50%">
     </div>
-
+    <hr>
 <!-- Mars Info -->
     <!-- <table class = "table"> {{  facts_html  }}</table> -->
-
+    <div class = "col-md-4">
+      <h3>Mars Facts!</h3>
+      <p>{{mars_dict.facts_html | safe}}</p>
+  </div>
 <!-- Mars Gallery -->
     <div>
-      <h3> Mars Hemispheres</h3>
       <hr>
-      <!-- GALLERY -->
     </div>
+    <div class ="row" id="mars-hemispheres">
+      <div class = "col-md-12">
+          <h3><center>Mars Hemispheres</center></h3>
 
-
+          {% for hemi in mars_dict.mars_urls %}
+              <div class = "col-md-6">
+                  <div class = "thumbnail">
+                      <img src = "{{hemi.img_url}}">
+                          <h3>{{hemi.title}}</h3>
+                      </div>
+                  </div>
+          {% endfor %}
+              </div>
+      </div>
+    </div>
   </div>
 </body>
 
